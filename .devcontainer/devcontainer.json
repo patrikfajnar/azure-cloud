@@ -20,11 +20,12 @@
 		"ghcr.io/devcontainers-contrib/features/flake8:2": {
 			"version": "latest",
 			"plugins": "flake8-black flake8-isort flake8-print flake8-bandit flake8-pylint flake8-builtins flake8-spellcheck flake8-pytest-style flake8-django flake8-fastapi"
-		}	
+		},
+		"ghcr.io/devcontainers/features/azure-cli:1": {}	
     },
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "pip3 install --user -r requirements.txt",
+	//"postCreateCommand": "pip3 install --user -r .devcontainer/requirements.txt",
 
 	// Configure tool-specific properties.
 	// "customizations": {},
