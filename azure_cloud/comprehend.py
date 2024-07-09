@@ -1,3 +1,5 @@
+# %%
+# Import
 import pprint
 from azure.core.credentials import AzureKeyCredential
 from azure.ai.textanalytics import TextAnalyticsClient
@@ -11,11 +13,11 @@ text_analytics_client = TextAnalyticsClient(endpoint, AzureKeyCredential(apikey)
 # %%
 # Language Detection
 documents = ["This is a test sentence in English"]
-response = text_analytics_client.detect_language(documents = documents)
+response = text_analytics_client.detect_language(documents=documents)
 pp.pprint(f"Language: {response[0].primary_language.name}")
 
 documents = ["A: Hallo, wie geht es Ihnen?\nB: Ça va bien. Merci. Et toi?"]
-response = text_analytics_client.detect_language(documents = documents)
+response = text_analytics_client.detect_language(documents=documents)
 pp.pprint(f"Language: {response[0]}")
 
 # %%

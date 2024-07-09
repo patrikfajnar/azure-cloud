@@ -1,3 +1,5 @@
+# %%
+# Import
 from azure.ai.translation.text import TextTranslationClient
 from azure.core.credentials import AzureKeyCredential
 

@@ -1,7 +1,10 @@
+# %%
+# Import
 import os, uuid
 from azure.identity import DefaultAzureCredential
 from azure.storage.blob import BlobServiceClient
 
+# login: az login --use-device-code
 blob_service_client = BlobServiceClient("https://pythonailearn.blob.core.windows.net", credential=DefaultAzureCredential())
     
 # %%
